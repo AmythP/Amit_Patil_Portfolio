@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit Patil - AI-Driven Data Analyst & Automation Specialist</title>
+    <meta name="description" content="Professional portfolio of Amit Patil - AI-Driven Data Analyst and Automation Specialist from Indore, India">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            font-weight: 700;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 20px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1E3A8A;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00BFA6;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1E3A8A 0%, #00BFA6 100%);
+            color: white;
+            padding: 150px 20px 100px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: fadeInUp 0.8s;
+        }
+
+        .hero .title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            opacity: 0.95;
+        }
+
+        .hero .tagline {
+            font-size: 1.1rem;
+            font-style: italic;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            /* Use flex for perfect vertical and horizontal centering */
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            /* Increased min-width slightly for robust fitting and synchronization */
+            min-width: 250px; 
+        }
+
+        .btn-primary {
+            background: transparent;
+            color: #1E3A8A;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-resume {
+            background: #00BFA6;
+            color: white;
+            border: 2px solid #00BFA6;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .resume-download {
+            /* Now relies on .btn for display: flex and centering, only needs gap */
+            gap: 0.5rem;
+        }
+
+        .resume-icon {
+            font-size: 1.2rem;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 80px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1E3A8A;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #00BFA6;
+            margin: 1rem auto;
+        }
+
+        /* Quick Intro */
+        .intro {
+            background: white;
+            text-align: center;
+        }
+
+        .intro p {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .skill-card h3 {
+            color: #1E3A8A;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .skill-card ul {
+            list-style: none;
+        }
+
+        .skill-card li {
+            padding: 0.5rem 0;
+            color: #666;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .skill-card li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: #00BFA6;
+            font-weight: bold;
+        }
+
+        /* Projects */
+        .projects {
+            background: #f8f9fa;
+        }
+
+        .project-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            border-left: 4px solid #00BFA6;
+        }
+
+        .project-card h3 {
+            color: #1E3A8A;
+            margin-bottom: 1rem;
+        }
+
+        .project-card p {
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card .impact {
+            color: #00BFA6;
+            font-weight: 600;
+            margin: 1rem 0;
+        }
+
+        .project-link {
+            color: #1E3A8A;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .project-link:hover {
+            color: #00BFA6;
+        }
+
+        /* Achievements */
+        .achievements {
+            background: white;
+        }
+
+        .achievement-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .achievement-card {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e8e8e8 100%);
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .achievement-card:hover {
+            transform: scale(1.05);
+        }
+
+        .achievement-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .achievement-card h4 {
+            color: #1E3A8A;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Poetry Section */
+        .poetry {
+            background: linear-gradient(135deg, #1E3A8A 0%, #2c5aa0 100%);
+            color: white;
+        }
+
+        .poetry .section-title {
+            color: white;
+        }
+
+        .poetry .section-title::after {
+            background: #00BFA6;
+        }
+
+        .poem {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .poem h3 {
+            color: #00BFA6;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .poem p {
+            font-size: 1.1rem;
+            line-height: 2;
+            font-weight: 300;
+        }
+
+        /* About Section */
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .quote {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: #1E3A8A;
+            font-weight: 600;
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #00BFA6;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #1E3A8A;
+            color: white;
+            text-align: center;
+        }
+
+        .contact .section-title {
+            color: white;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            text-align: center;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        .contact-item a:hover {
+            color: #00BFA6;
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background: #0f1f4d;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .title {
+                font-size: 1.2rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .skills-grid, .achievement-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                gap: 1.5rem;
+            }
+            /* Adjust button min-width for mobile */
+            .btn {
+                min-width: 200px; /* Adjusted size for mobile consistency */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">Amit Patil</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#poetry">Poetry</a></li>
+                <!-- Nav Bar Resume Link: Updated href to link the PDF file directly -->
+                <li><a href="Amit_Patil_Resume.pdf" target="_blank" class="btn btn-primary resume-download" style="border: 2px solid #1E3A8A; color: #1E3A8A; background: white; padding: 12px 30px;">
+    <span class="resume-icon">📄</span>
+    Download Resume
+</a>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Amit Patil</h1>
+            <div class="title">AI-Driven Data Analyst & Automation Specialist</div>
+            <div class="tagline">Where data meets emotion — a journey through AI and art</div>
+            <div class="cta-buttons">
+                <!-- Button 1: View Projects -->
+                <a href="#projects" class="btn btn-secondary" style="border: 2px solid white;">View Projects</a>
+
+                <!-- Button 2 (Download Resume in Hero): Updated href to link the PDF file directly -->
+                <div id="resume" style="margin-bottom: 3rem;">
+                    <a href="Amit_Patil_Resume.pdf" target="_blank" class="btn btn-secondary resume-download" style="border: 2px solid white;">
+                        <span class="resume-icon">📄</span>
+                        Download My Resume
+                    </a>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">Get my complete professional profile in PDF format</p>
+                </div>
+                <!-- Button 3: Get In Touch -->
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Intro -->
+    <section class="intro">
+        <div class="container">
+            <h2 class="section-title">Professional Summary</h2>
+            <p>Data analyst and automation expert with over 2 years of experience in AI-based process optimization, data analytics, and inventory management across lab-grown and Belgium diamond companies. Specializing in creating AI-powered business intelligence tools, automating workflows using Python, Power BI, Excel VBA, and PowerShell, and leading employee AI training programs. My mission is to simplify operations, empower teams, and drive measurable results through technology — merging AI automation with data-driven strategy.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Core Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Power BI, Excel (VBA scripting, queries, connections)</li>
+                        <li>Python, PowerShell, Batch Programming</li>
+                        <li>Google Sheets App Script</li>
+                        <li>ChatGPT, Copilot, Gemini, Perplexity</li>
+                        <li>Adobe Photoshop, AutoCAD</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Business & Analytical Skills</h3>
+                    <ul>
+                        <li>Data Analysis & Visualization</li>
+                        <li>Process Automation & Workflow Optimization</li>
+                        <li>Purchase & Inventory Management</li>
+                        <li>AI Training & Enablement</li>
+                        <li>Strategic Planning & Business Process Improvement</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Leadership & Training</li>
+                        <li>Communication & Collaboration</li>
+                        <li>Problem-Solving & Analytical Thinking</li>
+                        <li>Adaptability & Innovation</li>
+                        <li>Team Building & Mentoring</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <div class="project-card">
+                <h3>Custom GPT Development & AI Training (2024–Present)</h3>
+                <p>Designed and developed multiple specialized Custom GPTs for employee training and skill development, focusing on communication, accent training, sales techniques, and professional development. These AI-powered training tools are actively used for enhancing team capabilities across various departments.</p>
+                <p class="impact">Impact: Transformed employee training through AI-powered personalized learning experiences across 9 specialized domains</p>
+                <div style="margin-top: 1.5rem;">
+                    <strong style="color: #1E3A8A; display: block; margin-bottom: 1rem;">🤖 Custom GPTs Created (9 Total):</strong>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+                        <a href="https://chatgpt.com/g/g-689a268469488191b03d091a78d93994-mock-call-watches" target="_blank" class="project-link" style="display: block; padding: 0.8rem; background: #f8f9fa; border-radius: 5px; border-left: 3px solid #00BFA6;">
+                            <strong>Mock Call Watches</strong><br>
+                            <span style="font-size: 0.9rem; color: #666;">Practice telephone & video calls with real-time feedback</span>
+                        </a>
+                        <a href="https://chatgpt.com/g/g-689a0628fac081918ac4cf010c7c1d1f-debate-anytime" target="_blank" class="project-link" style="display: block; padding: 0.8rem; background: #f8f9fa; border-radius: 5px; border-left: 3px solid #00BFA6;">
+                            <strong>Debate Anytime</strong><br>
+                            <span style="font-size: 0.9rem; color: #666;">Interactive debate practice for critical thinking skills</span>
+                        </a>
+                        <a href="https://chatgpt.com/g/g-6890d0802f988191aae912f6a405fc93-accentcoach-by-james" target="_blank" class="project-link" style="display: block; padding: 0.8rem; background: #f8f9fa; border-radius: 5px; border-left: 3px solid #00BFA6;">
+                            <strong>AccentCoach by James</strong><br>
+                            <span style="font-size: 0.9rem; color: #666;">Pronunciation & diction coaching for accent improvement</span>
+                        </a>
+                        <a href="https://chatgpt.com/g/g-687e8ed6f0148191a3881039191a1094-department-specific-comm-coach-by-james" target="_blank" class="project-link" style="display: block; padding: 0.8rem; background: #f8f9fa; border-radius: 5px; border-left: 3px solid #00BFA6;">
+                            <strong>Department-Specific Comm Coach</strong><br>
+                            <span style="font-size: 0.9rem; color: #666;">Workplace communication training by department</span>
+                        </a>
+                        <a href="https://chatgpt.com/g/g-687e84539b248191b0b806dad599ddf3-fun-topic-communication-by-james" target="_blank" class="project-link" style="display: block; padding: 0.8rem; background: #f8f9fa; border-radius: 5px; border-left: 3px solid #00BFA6;">
+                            <strong>Fun Topic Communication</strong><br>
+                            <span style="font-size: 0.9rem; color: #666;">Casual conversation & small-talk practice</span>
+                        </a>
+                        <a href="https://chatgpt.com/g/g-68781ca6db208191a6d5c9255e3059b9-english-communication-training-coach-by-james" target="_blank" class="project-link" style="display: block; padding: 0.8rem; background: #f8f9fa; border-radius: 5px; border-left: 3px solid #00BFA6;">
+                            <strong>English Communication Training Coach</strong><br>
+                            <span style="font-size: 0.9rem; color: #666;">Comprehensive English grammar, speaking & writing</span>
+                        </a>
+                        <a href="https://chatgpt.com/g/g-6875459ad80881918d34ca93f7015925-american-english-speech-training-by-james" target="_blank" class="project-link" style="display: block; padding: 0.8rem; background: #f8f9fa; border-radius: 5px; border-left: 3px solid #00BFA6;">
+                            <strong>American English Speech Training</strong><br>
+                            <span style="font-size: 0.9rem; color: #666;">American pronunciation, idioms & business English</span>
+                        </a>
+                        <a href="https://chatgpt.com/g/g-68a63203ea5c8191b59e28a8f043f992-sales-training" target="_blank" class="project-link" style="display: block; padding: 0.8rem; background: #f8f9fa; border-radius: 5px; border-left: 3px solid #00BFA6;">
+                            <strong>Sales Training</strong><br>
+                            <span style="font-size: 0.9rem; color: #666;">Professional sales techniques & customer engagement skills</span>
+                        </a>
+                        <a href="https://chatgpt.com/g/g-68093b4a06e481918cdb139689ceb566-training-feedback" target="_blank" class="project-link" style="display: block; padding: 0.8rem; background: #f8f9fa; border-radius: 5px; border-left: 3px solid #00BFA6;">
+                            <strong>Training Feedback</strong><br>
+                            <span style="font-size: 0.9rem; color: #666;">AI-powered feedback & performance evaluation for training sessions</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <h3>Organizational Tools (2024–Present)</h3>
+                <p>A comprehensive suite of PowerShell, Batch, and Excel macros automating file management operations including copying, renaming, monitoring, and organizing files across systems.</p>
+                <p class="impact">Impact: Improved workflow efficiency by 40%</p>
+                <a href="https://github.com/AmythP/organisation-tools.git" target="_blank" class="project-link">View on GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>AI Training Program (2025)</h3>
+                <p>Designed and led comprehensive AI training sessions introducing employees to ChatGPT, Copilot, and Gemini for enhanced productivity and communication across departments.</p>
+                <p class="impact">Impact: Enhanced team efficiency and AI fluency organization-wide</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Business Process Automation (2023–2025)</h3>
+                <p>Developed and implemented automated purchase and reporting workflows using Python and Excel VBA, streamlining operations and reducing manual intervention.</p>
+                <p class="impact">Impact: Reduced manual workload by 30% and improved accuracy</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievement-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">🥋</div>
+                    <h4>Black Belt</h4>
+                    <p>Shotokan Karate</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🧘</div>
+                    <h4>National Level</h4>
+                    <p>Yoga Participant</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🏐</div>
+                    <h4>National Player</h4>
+                    <p>Volleyball</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🎓</div>
+                    <h4>AI Trainer</h4>
+                    <p>Task Source Pvt. Ltd.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I'm Amit Patil — a data analyst and automation specialist passionate about using AI to make work smarter and life simpler. My career blends technology, analytics, and people development.</p>
+                
+                <p>I believe in bridging the gap between human creativity and machine intelligence — creating tools that not only optimize performance but also empower individuals.</p>
+                
+                <p>Outside of work, I find balance through yoga, martial arts, and writing Hindi poetry. My verses capture real-life experiences and emotions, reminding me that even in a world of automation, the human heart is the ultimate source of inspiration.</p>
+                
+                <div class="quote">"Automation doesn't replace people — it empowers them to reach their full potential."</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Poetry Section -->
+    <section id="poetry" class="poetry">
+        <div class="container">
+            <h2 class="section-title">Poetry by Amit</h2>
+            
+            <div class="poem">
+                <h3>कुछ करके दिखाना है</h3>
+                <p>
+                    बहुत हुआ हंसी मजाक अब थोड़ा गंभीर हो जाना है,<br>
+                    जीवन के पन्नों पर अब कुछ करके दिखाना है,<br>
+                    निकल पड़ा है हर जिगरी यार अपनी अपनी कामयाबी की ओर,<br>
+                    बस कुछ वक्त की बात है फिर मुझे भी कुछ कर जाना है,<br>
+                    दोस्तों, रिश्तो, वादों और इरादों से बहुत दूर कुछ करके दिखाना है।
+                </p>
+            </div>
+
+            <div class="poem">
+                <h3>बदलती दुनिया के रिश्ते</h3>
+                <p>
+                    बदलती दुनिया के रिश्तों में कहीं खो गई हूं मैं,<br>
+                    पहले ऐसी नहीं थी जैसी हो गई हूं मैं,<br>
+                    जिम्मेदारियां के बोझ तले दब गया बचपन मेरा,<br>
+                    अब कोई दुख सताए तो रोटी नहीं हूं मैं,<br>
+                    हां प्यार की तलाश में रहती हूं आज भी मगर,<br>
+                    धोखेबाजों को अब दूसरा मौका देती नहीं हूं मैं,<br>
+                    हां अब आ गया है खुद को संभालना और अकेले चलने का हुनर,<br>
+                    अब किसी भी दर्द में सहारा ढूंढती नहीं हूं मैं,<br>
+                    प्यार हो दोस्ती हो परिवार हो या रिश्तेदार,<br>
+                    हर रिश्ता निभाकर भी खुद को खोती नहीं हूं मैं,<br>
+                    हां बुरा लगता है वक्त के साथ लोगों के बदले जाने का पर,<br>
+                    अब दिल नहीं करता रूठो को मनाने का,<br>
+                    क्योंकि बदलती दुनिया के रिश्तों में कहीं खो गई हूं मैं,<br>
+                    पहले ऐसी नहीं थी जैसी हो गई हूं मैं।
+                </p>
+            </div>
+
+            <div class="poem">
+                <h3>मशवरा ए जिंदगी</h3>
+                <p>
+                   <p>यूं ही नहीं बांटते फिरते हैं हम मशवरा ए जिंदगी,<br>
+एक उम्र गुज़ार चुके हैं जिंदगी को समझने में,<br>
+कबूल कर चुके हैं सच्चाई जिंदगी की,<br>
+जिसने मदद की हमेशा खुद को संवारने में,<br>
+<br>दोस्त मिलते गए बिछड़ते गए,<br>
+पर खुद की अहमियत कभी कम न होने दी,<br>
+बनाई रखी अपनी हस्ती हमेशा सर आंखों पर,<br>
+वजूद की तस्वीर कभी दुनिया में ना खोने दी,<br>
+<br>सच ही कहा है किसी ने उसूलों पर अगर आंच आए तो टकराना जरूरी है,<br>
+जिंदा हो तो जिंदा नजर आना जरूरी है।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <a href="mailto:amitpatil.patil35@gmail.com">amitpatil.patil35@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">🔗</span>
+                    <a href="https://linkedin.com/in/amit-patil-47a344b4" target="_blank">LinkedIn Profile</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">💻</span>
+                    <a href="https://github.com/AmythP/organisation-tools.git" target="_blank">GitHub Portfolio</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <span>Indore, Madhya Pradesh, India</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Amit Patil. All rights reserved. | AI-Driven Data Analyst & Automation Specialist</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                // Check if the link is a download link (which starts with the filename), if so, skip smooth scroll
+                if (this.getAttribute('href').endsWith('.pdf')) {
+                    return;
+                }
+                
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animation for elements
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.8s ease-out';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.skill-card, .project-card, .achievement-card, .poem').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
