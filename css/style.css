@@ -1,195 +1,218 @@
-/* Global Styles */
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  background-color: #f9f9f9;
-  /* account for fixed nav */
-  padding-top: 72px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Amit Patil is a solution-oriented Data Analyst with experience in purchase, procurement, inventory management, and international shipping."
+  />
+  <title>Amit Patil | Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container navbar" aria-label="Main navigation">
+      <div class="brand">Amit Patil</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-nav {
-  background: #2c3e50;
-  padding: 1rem 2rem;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Amit Patil</h1>
+          <p class="subtitle">Data Analyst | Procurement | Inventory Management | International Shipping</p>
+          <p class="lead">
+            Solution-oriented Data Analyst with 2+ years of specialized experience in purchase,
+            procurement, inventory management, and international shipping within the lab-grown and Belgium diamond industries.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="Amit_Patil_Resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
+            <a class="btn btn-secondary" href="#projects">View My Work</a>
+          </div>
+        </div>
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-}
+        <aside class="hero-panel">
+          <h3>Core Expertise</h3>
+          <ul>
+            <li>Purchase & procurement analysis</li>
+            <li>Inventory management</li>
+            <li>International shipping operations</li>
+            <li>Operational reporting</li>
+            <li>Data-driven business decisions</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
 
-nav ul li {
-  margin: 0 1rem;
-}
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow alt">About Me</p>
+          <h2>Turning operations data into clear business insights</h2>
+        </div>
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              I am a solution-oriented Data Analyst focused on turning complex operational data into meaningful insights.
+              My work supports better decision-making across purchasing, procurement, inventory control, and international shipping.
+            </p>
+            <p>
+              With experience in the lab-grown and Belgium diamond industries, I understand how data influences buying decisions,
+              stock movement, operational efficiency, and cross-border logistics. I combine analytical thinking with practical business understanding
+              to help teams improve performance and make smarter operational choices.
+            </p>
+          </div>
 
-nav ul li a:hover {
-  color: #3498db;
-}
+          <div class="stats-grid">
+            <div class="stat-card">
+              <strong>2+</strong>
+              <span>Years of specialized experience</span>
+            </div>
+            <div class="stat-card">
+              <strong>Procurement</strong>
+              <span>Purchase analysis & tracking</span>
+            </div>
+            <div class="stat-card">
+              <strong>Inventory</strong>
+              <span>Monitoring and optimization</span>
+            </div>
+            <div class="stat-card">
+              <strong>Shipping</strong>
+              <span>International movement insights</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-/* Hero Section */
-.hero {
-  height: calc(100vh - 72px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-bg.jpg') no-repeat center center/cover;
-  color: white;
-  padding: 0 1rem;
-}
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow alt">Experience</p>
+          <h2>Professional focus areas</h2>
+        </div>
 
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <h3>Data Analyst</h3>
+              <p class="meta">Lab-grown & Belgium diamond sectors</p>
+              <ul>
+                <li>Analyzed purchase, procurement, and inventory data for operational improvement.</li>
+                <li>Supported monitoring of stock flow, demand patterns, and business continuity.</li>
+                <li>Worked with international shipping-related data to improve visibility and planning.</li>
+              </ul>
+            </div>
+          </div>
 
-.hero-content .subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-}
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <h3>Procurement & Inventory Support</h3>
+              <p class="meta">Business operations and reporting</p>
+              <ul>
+                <li>Helped track purchasing activity and operational trends affecting inventory decisions.</li>
+                <li>Contributed to process understanding around stock management and supply flow.</li>
+                <li>Collaborated with business teams to turn operational information into actionable insights.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.btn {
-  display: inline-block;
-  background: #3498db;
-  color: white;
-  padding: 0.8rem 1.5rem;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background 0.3s;
-}
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow alt">Projects & Work Areas</p>
+          <h2>Business analytics and operational problem solving</h2>
+        </div>
 
-.btn:hover {
-  background: #2980b9;
-}
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-icon"><i class="fas fa-boxes"></i></div>
+            <h3>Inventory Management Insights</h3>
+            <p>Reviewed stock movement and inventory behavior to identify operational gaps and support more informed decisions.</p>
+          </article>
 
-/* Projects Section */
-.projects {
-  padding: 5rem 2rem;
-  text-align: center;
-}
+          <article class="project-card">
+            <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
+            <h3>Purchase & Procurement Analysis</h3>
+            <p>Worked with purchase and procurement data to monitor buying patterns and improve data-backed decision-making.</p>
+          </article>
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+          <article class="project-card">
+            <div class="project-icon"><i class="fas fa-globe"></i></div>
+            <h3>International Shipping Monitoring</h3>
+            <p>Analyzed shipping-related information that supports planning, visibility, and operational efficiency.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-.project-card {
-  background: white;
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow alt">Skills</p>
+          <h2>Tools, technologies, and functional strengths</h2>
+        </div>
 
-.project-card h3 {
-  margin-top: 0;
-}
+        <div class="skills-grid">
+          <div class="skill-item"><i class="fas fa-table"></i> <span>Excel</span></div>
+          <div class="skill-item"><i class="fas fa-database"></i> <span>SQL</span></div>
+          <div class="skill-item"><i class="fas fa-chart-bar"></i> <span>Power BI</span></div>
+          <div class="skill-item"><i class="fas fa-chart-line"></i> <span>Tableau</span></div>
+          <div class="skill-item"><i class="fab fa-python"></i> <span>Python</span></div>
+          <div class="skill-item"><i class="fab fa-html5"></i> <span>HTML</span></div>
+          <div class="skill-item"><i class="fab fa-css3-alt"></i> <span>CSS</span></div>
+          <div class="skill-item"><i class="fab fa-js"></i> <span>JavaScript</span></div>
+          <div class="skill-item"><i class="fas fa-chart-pie"></i> <span>Data Visualization</span></div>
+          <div class="skill-item"><i class="fas fa-warehouse"></i> <span>Inventory Management</span></div>
+          <div class="skill-item"><i class="fas fa-truck"></i> <span>International Shipping</span></div>
+          <div class="skill-item"><i class="fas fa-briefcase"></i> <span>Procurement Analysis</span></div>
+        </div>
+      </div>
+    </section>
 
-.project-links {
-  margin-top: 1rem;
-}
+    <section id="contact" class="section contact-section">
+      <div class="container contact-box">
+        <div>
+          <p class="eyebrow alt">Contact</p>
+          <h2>Let's connect</h2>
+        </div>
 
-.project-links a {
-  margin-right: 1rem;
-  color: #3498db;
-  text-decoration: none;
-}
+        <div class="contact-list">
+          <p><i class="fas fa-envelope"></i> <a href="mailto:amitpatil.patil35@gmail.com">amitpatil.patil35@gmail.com</a></p>
+          <p><i class="fab fa-github"></i> <a href="https://github.com/AmythP" target="_blank" rel="noopener noreferrer">github.com/AmythP</a></p>
+          <p><i class="fas fa-file-alt"></i> <a href="Amit_Patil_Resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-/* Skills Section */
-.skills {
-  padding: 5rem 2rem;
-  text-align: center;
-}
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Amit Patil. All rights reserved.</p>
+    </div>
+  </footer>
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 2rem;
-  max-width: 800px;
-  margin: 2rem auto;
-}
-
-.skill-item {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.skill-item:hover {
-  transform: translateY(-5px);
-}
-
-.skill-item i {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  color: #3498db;
-}
-
-.skill-item p {
-  margin: 0;
-  font-weight: 600;
-}
-
-/* Contact Section */
-.contact {
-  padding: 5rem 2rem;
-  text-align: center;
-}
-
-.contact-info {
-  max-width: 600px;
-  margin: 1rem auto;
-}
-
-.contact-info p {
-  margin: 0.5rem 0;
-}
-
-.contact-info a {
-  color: #3498db;
-  text-decoration: none;
-}
-
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  background: #fff;
-  border-top: 1px solid #eee;
-}
-
-.resume-link {
-  text-align: center;
-  margin: 2rem 0;
-}
-
-/* Responsive tweaks */
-@media (max-width: 600px) {
-  .hero-content h1 { font-size: 2rem; }
-  .hero-content .subtitle { font-size: 1rem; }
-  nav ul { flex-direction: column; gap: 0.5rem; }
-}
+  <script src="js/script.js"></script>
+</body>
+</html>
