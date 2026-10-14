@@ -1,218 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta
-    name="description"
-    content="Amit Patil is a solution-oriented Data Analyst with experience in purchase, procurement, inventory management, and international shipping."
-  />
-  <title>Amit Patil | Data Analyst Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
-</head>
-<body>
-  <header class="site-header">
-    <nav class="container navbar" aria-label="Main navigation">
-      <div class="brand">Amit Patil</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Amit Patil is an IT Manager, Inventory Management Specialist, and Data Analyst focused on procurement, inventory optimization, and data-driven business decisions."
+    />
+    <title>Amit Patil | IT Manager | Data Analyst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="bg-grid"></div>
+    <div class="page-glow glow-one"></div>
+    <div class="page-glow glow-two"></div>
 
-  <main id="home">
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <p class="eyebrow">Hello, I'm</p>
-          <h1>Amit Patil</h1>
-          <p class="subtitle">Data Analyst | Procurement | Inventory Management | International Shipping</p>
-          <p class="lead">
-            Solution-oriented Data Analyst with 2+ years of specialized experience in purchase,
-            procurement, inventory management, and international shipping within the lab-grown and Belgium diamond industries.
-          </p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="Amit_Patil_Resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
-            <a class="btn btn-secondary" href="#projects">View My Work</a>
-          </div>
-        </div>
+    <header class="site-header">
+      <nav class="container navbar" aria-label="Main navigation">
+        <a href="#home" class="brand-wrap">
+          <span class="brand-mark">AP</span>
+          <span class="brand-name">Amit Patil</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <aside class="hero-panel">
-          <h3>Core Expertise</h3>
-          <ul>
-            <li>Purchase & procurement analysis</li>
-            <li>Inventory management</li>
-            <li>International shipping operations</li>
-            <li>Operational reporting</li>
-            <li>Data-driven business decisions</li>
-          </ul>
-        </aside>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow alt">About Me</p>
-          <h2>Turning operations data into clear business insights</h2>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-copy">
-            <p>
-              I am a solution-oriented Data Analyst focused on turning complex operational data into meaningful insights.
-              My work supports better decision-making across purchasing, procurement, inventory control, and international shipping.
+    <main id="home">
+      <section class="hero section">
+        <div class="container hero-inner">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Technology • Operations • Analytics</p>
+            <h1>
+              <span class="title-line">IT Manager</span>
+              <span class="title-line accent">Inventory Management Specialist</span>
+              <span class="title-line">Data Analyst</span>
+            </h1>
+            <p class="subtitle">
+              Driving operational efficiency through technology, inventory intelligence, and business analytics.
             </p>
-            <p>
-              With experience in the lab-grown and Belgium diamond industries, I understand how data influences buying decisions,
-              stock movement, operational efficiency, and cross-border logistics. I combine analytical thinking with practical business understanding
-              to help teams improve performance and make smarter operational choices.
+            <p class="lead">
+              Solution-oriented technology and operations professional with 2+ years of specialized experience in
+              purchase, procurement, inventory management, and international shipping across the lab-grown and Belgium
+              diamond industries.
             </p>
-          </div>
-
-          <div class="stats-grid">
-            <div class="stat-card">
-              <strong>2+</strong>
-              <span>Years of specialized experience</span>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="Amit_Patil_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-download"></i> Download Resume
+              </a>
+              <a class="btn btn-secondary" href="#projects">
+                <i class="fas fa-arrow-down"></i> Explore Projects
+              </a>
             </div>
-            <div class="stat-card">
-              <strong>Procurement</strong>
-              <span>Purchase analysis & tracking</span>
-            </div>
-            <div class="stat-card">
-              <strong>Inventory</strong>
-              <span>Monitoring and optimization</span>
-            </div>
-            <div class="stat-card">
-              <strong>Shipping</strong>
-              <span>International movement insights</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="section section-alt">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow alt">Experience</p>
-          <h2>Professional focus areas</h2>
-        </div>
-
-        <div class="timeline">
-          <div class="timeline-item">
-            <span class="timeline-dot"></span>
-            <div class="timeline-card">
-              <h3>Data Analyst</h3>
-              <p class="meta">Lab-grown & Belgium diamond sectors</p>
-              <ul>
-                <li>Analyzed purchase, procurement, and inventory data for operational improvement.</li>
-                <li>Supported monitoring of stock flow, demand patterns, and business continuity.</li>
-                <li>Worked with international shipping-related data to improve visibility and planning.</li>
-              </ul>
+            <div class="mini-stats">
+              <div>
+                <strong>2+</strong>
+                <span>Years</span>
+              </div>
+              <div>
+                <strong>Procurement</strong>
+                <span>Operations</span>
+              </div>
+              <div>
+                <strong>Inventory</strong>
+                <span>Optimization</span>
+              </div>
             </div>
           </div>
 
-          <div class="timeline-item">
-            <span class="timeline-dot"></span>
-            <div class="timeline-card">
-              <h3>Procurement & Inventory Support</h3>
-              <p class="meta">Business operations and reporting</p>
-              <ul>
-                <li>Helped track purchasing activity and operational trends affecting inventory decisions.</li>
-                <li>Contributed to process understanding around stock management and supply flow.</li>
-                <li>Collaborated with business teams to turn operational information into actionable insights.</li>
-              </ul>
+          <div class="hero-panel reveal">
+            <div class="panel-header">
+              <span class="status-dot"></span>
+              <span>Operational Intelligence</span>
+            </div>
+            <div class="panel-body">
+              <div class="info-block">
+                <span class="label">Primary Focus</span>
+                <strong>IT Systems & Inventory Control</strong>
+              </div>
+              <div class="info-block">
+                <span class="label">Core Strengths</span>
+                <strong>Procurement, Logistics, Reporting, KPI Monitoring</strong>
+              </div>
+              <div class="info-block">
+                <span class="label">Industry Exposure</span>
+                <strong>Lab-Grown & Belgium Diamond Supply Chain</strong>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow alt">About Me</p>
+            <h2>Technology-driven problem solver with operational depth.</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-copy reveal">
+              <p>
+                I am a solution-oriented professional combining IT management, inventory expertise, and data analysis to improve
+                business performance. My work focuses on operational efficiency, streamlined procurement, inventory visibility,
+                and smarter decision-making using data-backed insights.
+              </p>
+              <p>
+                With hands-on experience in purchase operations, procurement workflows, inventory monitoring, and international
+                shipping, I help organizations strengthen process control while improving technical and business outcomes.
+              </p>
+            </div>
+
+            <div class="metrics reveal">
+              <div class="metric-card">
+                <i class="fas fa-server"></i>
+                <div>
+                  <strong>IT Operations</strong>
+                  <span>Systems, workflows, and support</span>
+                </div>
+              </div>
+              <div class="metric-card">
+                <i class="fas fa-warehouse"></i>
+                <div>
+                  <strong>Inventory Strategy</strong>
+                  <span>Tracking, planning, and optimization</span>
+                </div>
+              </div>
+              <div class="metric-card">
+                <i class="fas fa-chart-line"></i>
+                <div>
+                  <strong>Data Analytics</strong>
+                  <span>KPI analysis and reporting</span>
+                </div>
+              </div>
+              <div class="metric-card">
+                <i class="fas fa-shipping-fast"></i>
+                <div>
+                  <strong>International Shipping</strong>
+                  <span>Logistics visibility and coordination</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section section-alt">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow alt">Experience</p>
+            <h2>Professional background and capabilities</h2>
+          </div>
+
+          <div class="timeline reveal">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <h3>IT Manager</h3>
+                <p class="meta">Systems & operational management</p>
+                <ul>
+                  <li>Oversaw workflow efficiency, process control, and system-driven operational support.</li>
+                  <li>Improved coordination between technology, inventory, and business operations.</li>
+                  <li>Supported decision-making through data-aware operational management practices.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <h3>Inventory Management Specialist</h3>
+                <p class="meta">Stock control, planning, and monitoring</p>
+                <ul>
+                  <li>Managed purchase-related inventory workflows and business tracking processes.</li>
+                  <li>Supported monitoring of stock movement, forecast alignment, and operational continuity.</li>
+                  <li>Contributed to inventory visibility across changing business demands.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <h3>Data Analyst</h3>
+                <p class="meta">Procurement, shipping, and business intelligence</p>
+                <ul>
+                  <li>Analyzed purchase and inventory data to improve business insights and operational decisions.</li>
+                  <li>Worked on international shipping-related reporting and process visibility.</li>
+                  <li>Translated raw operational data into actionable business intelligence.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow alt">Projects</p>
+            <h2>Selected work in analytics, operations, and inventory intelligence</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <div class="project-icon"><i class="fas fa-boxes"></i></div>
+              <h3>Procurement Analytics Dashboard</h3>
+              <p>
+                Developed data-driven monitoring for purchase and procurement activities to improve visibility and operational planning.
+              </p>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-icon"><i class="fas fa-warehouse"></i></div>
+              <h3>Inventory Control Monitoring</h3>
+              <p>
+                Focused on tracking stock movement, identifying inefficiencies, and improving inventory management performance.
+              </p>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-icon"><i class="fas fa-shipping-fast"></i></div>
+              <h3>Shipping Operations Insights</h3>
+              <p>
+                Analyzed shipment-related operational data to support better planning and international logistics visibility.
+              </p>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-icon"><i class="fas fa-chart-pie"></i></div>
+              <h3>KPI Reporting Framework</h3>
+              <p>
+                Built structured reporting workflows to turn operational metrics into clear business performance dashboards.
+              </p>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-icon"><i class="fas fa-database"></i></div>
+              <h3>Data Quality & Business Intelligence</h3>
+              <p>
+                Worked with operational datasets to strengthen reporting quality, consistency, and action-oriented decision support.
+              </p>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-icon"><i class="fas fa-cogs"></i></div>
+              <h3>Operational Efficiency Initiative</h3>
+              <p>
+                Identified workflow bottlenecks and improved process clarity through analytical review and business-focused insights.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications" class="section section-alt certifications-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow alt">Certifications & Training</p>
+            <h2>Core professional learning and technical capabilities</h2>
+          </div>
+
+          <div class="cert-grid">
+            <div class="cert-card reveal">
+              <i class="fas fa-certificate"></i>
+              <span>Excel for Data Analysis</span>
+            </div>
+            <div class="cert-card reveal">
+              <i class="fas fa-certificate"></i>
+              <span>Power BI Dashboarding</span>
+            </div>
+            <div class="cert-card reveal">
+              <i class="fas fa-certificate"></i>
+              <span>SQL & Reporting</span>
+            </div>
+            <div class="cert-card reveal">
+              <i class="fas fa-certificate"></i>
+              <span>Inventory Management Fundamentals</span>
+            </div>
+            <div class="cert-card reveal">
+              <i class="fas fa-certificate"></i>
+              <span>Business Intelligence</span>
+            </div>
+            <div class="cert-card reveal">
+              <i class="fas fa-certificate"></i>
+              <span>IT Operations & Process Support</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-box reveal">
+          <div>
+            <p class="eyebrow alt">Contact</p>
+            <h2>Connect with me</h2>
+          </div>
+
+          <div class="contact-list">
+            <p><i class="fas fa-envelope"></i> <a href="mailto:amitpatil.patil35@gmail.com">amitpatil.patil35@gmail.com</a></p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/amit-patil-47a344b4/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+            <p><i class="fab fa-github"></i> <a href="https://github.com/AmythP" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+            <p><i class="fas fa-file-alt"></i> <a href="Amit_Patil_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume PDF</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Amit Patil | IT Manager | Inventory Management Specialist | Data Analyst</p>
       </div>
-    </section>
+    </footer>
 
-    <section id="projects" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow alt">Projects & Work Areas</p>
-          <h2>Business analytics and operational problem solving</h2>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-icon"><i class="fas fa-boxes"></i></div>
-            <h3>Inventory Management Insights</h3>
-            <p>Reviewed stock movement and inventory behavior to identify operational gaps and support more informed decisions.</p>
-          </article>
-
-          <article class="project-card">
-            <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
-            <h3>Purchase & Procurement Analysis</h3>
-            <p>Worked with purchase and procurement data to monitor buying patterns and improve data-backed decision-making.</p>
-          </article>
-
-          <article class="project-card">
-            <div class="project-icon"><i class="fas fa-globe"></i></div>
-            <h3>International Shipping Monitoring</h3>
-            <p>Analyzed shipping-related information that supports planning, visibility, and operational efficiency.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="section section-alt">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow alt">Skills</p>
-          <h2>Tools, technologies, and functional strengths</h2>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skill-item"><i class="fas fa-table"></i> <span>Excel</span></div>
-          <div class="skill-item"><i class="fas fa-database"></i> <span>SQL</span></div>
-          <div class="skill-item"><i class="fas fa-chart-bar"></i> <span>Power BI</span></div>
-          <div class="skill-item"><i class="fas fa-chart-line"></i> <span>Tableau</span></div>
-          <div class="skill-item"><i class="fab fa-python"></i> <span>Python</span></div>
-          <div class="skill-item"><i class="fab fa-html5"></i> <span>HTML</span></div>
-          <div class="skill-item"><i class="fab fa-css3-alt"></i> <span>CSS</span></div>
-          <div class="skill-item"><i class="fab fa-js"></i> <span>JavaScript</span></div>
-          <div class="skill-item"><i class="fas fa-chart-pie"></i> <span>Data Visualization</span></div>
-          <div class="skill-item"><i class="fas fa-warehouse"></i> <span>Inventory Management</span></div>
-          <div class="skill-item"><i class="fas fa-truck"></i> <span>International Shipping</span></div>
-          <div class="skill-item"><i class="fas fa-briefcase"></i> <span>Procurement Analysis</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <div class="container contact-box">
-        <div>
-          <p class="eyebrow alt">Contact</p>
-          <h2>Let's connect</h2>
-        </div>
-
-        <div class="contact-list">
-          <p><i class="fas fa-envelope"></i> <a href="mailto:amitpatil.patil35@gmail.com">amitpatil.patil35@gmail.com</a></p>
-          <p><i class="fab fa-github"></i> <a href="https://github.com/AmythP" target="_blank" rel="noopener noreferrer">github.com/AmythP</a></p>
-          <p><i class="fas fa-file-alt"></i> <a href="Amit_Patil_Resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a></p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; 2026 Amit Patil. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="js/script.js"></script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
