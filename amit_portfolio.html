@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Amit Patil — IT Manager focused on healthcare IT, business systems, ERP implementation, automation, and analytics.">
+  <meta name="theme-color" content="#07111f">
+  <title>Amit Patil | IT Management &amp; Automation Portfolio</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <style>
+    :root { color-scheme: dark; --cyan:#67e8f9; --amber:#fbbf24; }
+    body { background:#07111f; color:#e5edf7; font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; }
+    .backdrop { position:fixed; inset:0; z-index:-1; pointer-events:none; background:radial-gradient(ellipse at 75% 15%,rgba(8,145,178,.18),transparent 40%),radial-gradient(ellipse at 10% 70%,rgba(217,119,6,.12),transparent 40%),linear-gradient(rgba(103,232,249,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(103,232,249,.035) 1px,transparent 1px); background-size:auto,auto,48px 48px,48px 48px; }
+    .panel { background:rgba(15,27,45,.8); border:1px solid rgba(103,232,249,.16); box-shadow:0 18px 55px rgba(0,0,0,.24); backdrop-filter:blur(12px); }
+    .accent { background:linear-gradient(110deg,#fbbf24,#67e8f9); -webkit-background-clip:text; background-clip:text; color:transparent; }
+    .reveal { opacity:0; transform:translateY(14px); transition:opacity .55s ease,transform .55s ease; }
+    .reveal.visible { opacity:1; transform:none; }
+    @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; animation:none!important; } }
+  </style>
+</head>
+<body class="antialiased">
+  <div class="backdrop"></div>
+  <header class="sticky top-0 z-30 border-b border-cyan-300/10 bg-slate-950/85 backdrop-blur-xl">
+    <nav class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6" aria-label="Main navigation">
+      <a href="#home" class="font-semibold tracking-wide text-white">AMIT <span class="text-cyan-300">PATIL</span></a>
+      <div class="hidden items-center gap-6 text-sm text-slate-300 md:flex">
+        <a class="hover:text-cyan-200" href="#about">About</a><a class="hover:text-cyan-200" href="#experience">Experience</a><a class="hover:text-cyan-200" href="#projects">Projects</a><a class="hover:text-cyan-200" href="#contact">Contact</a>
+      </div>
+      <a href="#contact" class="rounded-lg border border-cyan-300/30 px-3 py-2 text-xs font-semibold text-cyan-200 hover:bg-cyan-300/10">Get in touch</a>
+    </nav>
+  </header>
+  <main id="home" class="mx-auto max-w-6xl px-4 sm:px-6">
+    <section class="grid min-h-[76vh] items-center gap-12 py-20 lg:grid-cols-[1.25fr_.75fr]">
+      <div class="reveal">
+        <p class="mb-5 text-xs font-semibold uppercase tracking-[.28em] text-cyan-300">Technology · Operations · Analytics</p>
+        <h1 class="text-5xl font-bold leading-tight text-white sm:text-6xl">Amit <span class="accent">Patil</span></h1>
+        <p class="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">IT Manager building dependable business systems, ERP workflows, and practical automation for healthcare and operations teams.</p>
+        <p class="mt-4 max-w-2xl leading-relaxed text-slate-400">Experienced across healthcare IT, infrastructure, ERP implementation, inventory and procurement, reporting, and AI-assisted process improvement.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a class="rounded-lg bg-gradient-to-r from-amber-400 to-cyan-300 px-5 py-3 font-semibold text-slate-950" href="#projects">Explore projects <span aria-hidden="true">↘</span></a>
+          <a class="rounded-lg border border-slate-600 px-5 py-3 font-medium text-slate-200 hover:border-cyan-300/60" href="#contact">Contact</a>
+        </div>
+      </div>
+      <aside class="panel reveal rounded-2xl p-6 sm:p-8">
+        <p class="text-xs font-semibold uppercase tracking-[.2em] text-amber-300">Areas of focus</p>
+        <ul class="mt-5 space-y-4">
+          <li class="flex gap-3"><span class="text-cyan-300">01</span><span><strong class="text-white">Healthcare IT</strong><span class="block text-sm text-slate-400">Infrastructure, HMS, support and implementation</span></span></li>
+          <li class="flex gap-3"><span class="text-cyan-300">02</span><span><strong class="text-white">Business systems</strong><span class="block text-sm text-slate-400">ERP rollouts, CRM, process design and training</span></span></li>
+          <li class="flex gap-3"><span class="text-cyan-300">03</span><span><strong class="text-white">Automation &amp; analytics</strong><span class="block text-sm text-slate-400">Python, Apps Script, Excel, Power BI and AI tools</span></span></li>
+        </ul>
+        <div class="mt-7 border-t border-slate-700 pt-5 text-sm text-slate-400"><span class="text-amber-300">Based in</span> Indore, Madhya Pradesh, India</div>
+      </aside>
+    </section>
+    <section id="about" class="py-16">
+      <div class="reveal max-w-3xl"><p class="text-xs font-semibold uppercase tracking-[.25em] text-cyan-300">About</p><h2 class="mt-3 text-3xl font-bold text-white">Connecting technology with day-to-day operations.</h2><p class="mt-5 leading-7 text-slate-300">I manage IT and develop tools that help teams work more clearly and efficiently. My work spans hospital infrastructure and systems, ERP adoption, inventory operations, procurement, workflow automation, data reporting, and staff enablement.</p></div>
+      <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="panel reveal rounded-xl p-5"><span class="text-2xl text-cyan-300">⌘</span><h3 class="mt-3 font-semibold text-white">IT operations</h3><p class="mt-2 text-sm leading-6 text-slate-400">Infrastructure, networks, devices, accounts and user support.</p></div>
+        <div class="panel reveal rounded-xl p-5"><span class="text-2xl text-amber-300">▤</span><h3 class="mt-3 font-semibold text-white">ERP &amp; systems</h3><p class="mt-2 text-sm leading-6 text-slate-400">Implementation, configuration, training and process adoption.</p></div>
+        <div class="panel reveal rounded-xl p-5"><span class="text-2xl text-cyan-300">↗</span><h3 class="mt-3 font-semibold text-white">Automation</h3><p class="mt-2 text-sm leading-6 text-slate-400">Practical internal tools, scripts and workflow improvements.</p></div>
+        <div class="panel reveal rounded-xl p-5"><span class="text-2xl text-amber-300">▥</span><h3 class="mt-3 font-semibold text-white">Data &amp; reporting</h3><p class="mt-2 text-sm leading-6 text-slate-400">Dashboards, reconciliations, KPI reporting and analysis.</p></div>
+      </div>
+    </section>
+    <section id="experience" class="py-16">
+      <div class="reveal"><p class="text-xs font-semibold uppercase tracking-[.25em] text-cyan-300">Experience</p><h2 class="mt-3 text-3xl font-bold text-white">Technology, systems and operations</h2></div>
+      <div class="mt-8 grid gap-4 lg:grid-cols-2">
+        <article class="panel reveal rounded-xl p-6"><p class="text-xs uppercase tracking-widest text-amber-300">2026 – Present</p><h3 class="mt-2 text-xl font-semibold text-white">IT Manager</h3><p class="mt-1 text-cyan-200">Asian Navkar Hospital &amp; Asian Institute of Infertility Management · Indore</p><p class="mt-4 text-sm leading-6 text-slate-300">Leading IT operations, infrastructure, hospital systems and implementation coordination across healthcare teams.</p></article>
+        <article class="panel reveal rounded-xl p-6"><p class="text-xs uppercase tracking-widest text-amber-300">2025 – Present</p><h3 class="mt-2 text-xl font-semibold text-white">Inventory Management Specialist (Part-time)</h3><p class="mt-1 text-cyan-200">Sweetness By AD’s Kitchen · Indore</p><p class="mt-4 text-sm leading-6 text-slate-300">Designed inventory workflows, purchase tracking, costing and audit reporting for a multi-outlet food business.</p></article>
+        <article class="panel reveal rounded-xl p-6"><p class="text-xs uppercase tracking-widest text-amber-300">2025 – 2026</p><h3 class="mt-2 text-xl font-semibold text-white">Data Analyst &amp; Inventory Manager</h3><p class="mt-1 text-cyan-200">Kashi The Fabric Store · Indore</p><p class="mt-4 text-sm leading-6 text-slate-300">Standardised ERP inventory data, automated payment reconciliation and built reporting/data-sync tools.</p></article>
+        <article class="panel reveal rounded-xl p-6"><p class="text-xs uppercase tracking-widest text-amber-300">2023 – 2025</p><h3 class="mt-2 text-xl font-semibold text-white">Data Analyst · Inventory &amp; Purchase Executive · AI Trainer</h3><p class="mt-1 text-cyan-200">Task Source and affiliated diamond businesses · Indore</p><p class="mt-4 text-sm leading-6 text-slate-300">Improved back-office processes with automation, analytics, inventory systems and employee training.</p></article>
+      </div>
+    </section>
+    <section id="projects" class="py-16">
+      <div class="reveal"><p class="text-xs font-semibold uppercase tracking-[.25em] text-cyan-300">Selected projects</p><h2 class="mt-3 text-3xl font-bold text-white">Systems built to solve real workflow problems</h2></div>
+      <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="panel reveal rounded-xl p-5"><p class="text-xs text-cyan-200">HEALTHCARE · REACT · SHEETS</p><h3 class="mt-3 font-semibold text-white">IVF Clinic Operations Platform</h3><p class="mt-2 text-sm leading-6 text-slate-400">Internal workflow platform for registrations, appointments, prescriptions and reporting.</p></article>
+        <article class="panel reveal rounded-xl p-5"><p class="text-xs text-amber-200">HEALTHCARE · CRM</p><h3 class="mt-3 font-semibold text-white">Hospital Lead CRM</h3><p class="mt-2 text-sm leading-6 text-slate-400">Lead tracking workflows for patients, doctors and tele-callers with automated capture.</p></article>
+        <article class="panel reveal rounded-xl p-5"><p class="text-xs text-cyan-200">ERP · PYTHON</p><h3 class="mt-3 font-semibold text-white">Inventory Audit Automation</h3><p class="mt-2 text-sm leading-6 text-slate-400">Compares consumption with available stock and produces discrepancy and closing-stock reports.</p></article>
+        <article class="panel reveal rounded-xl p-5"><p class="text-xs text-amber-200">ERP · APPS SCRIPT</p><h3 class="mt-3 font-semibold text-white">ERP Reporting &amp; Data Sync</h3><p class="mt-2 text-sm leading-6 text-slate-400">Automates sales, purchase, inventory and GST reporting with scheduled backups.</p></article>
+        <article class="panel reveal rounded-xl p-5"><p class="text-xs text-cyan-200">HR · HTML · JAVASCRIPT</p><h3 class="mt-3 font-semibold text-white">Appointment Letter Generator</h3><p class="mt-2 text-sm leading-6 text-slate-400">Creates structured appointment letters with salary details, validation and PDF export.</p></article>
+        <article class="panel reveal rounded-xl p-5"><p class="text-xs text-amber-200">AUTOMATION · PYTHON</p><h3 class="mt-3 font-semibold text-white">Operations Tools</h3><p class="mt-2 text-sm leading-6 text-slate-400">A collection of tools for reporting, reconciliation, file handling and process support.</p></article>
+      </div>
+    </section>
+    <section id="credentials" class="py-16">
+      <div class="reveal"><p class="text-xs font-semibold uppercase tracking-[.25em] text-cyan-300">Education &amp; capabilities</p><h2 class="mt-3 text-3xl font-bold text-white">A mix of technical depth and operational experience</h2></div>
+      <div class="mt-8 grid gap-4 md:grid-cols-2">
+        <div class="panel reveal rounded-xl p-6"><h3 class="font-semibold text-white">Education</h3><ul class="mt-4 space-y-3 text-sm text-slate-300"><li><strong>M.Tech.</strong> · Malwa Institute of Science and Technology · 2019–2022</li><li><strong>B.Tech.</strong> · Vel Tech University · 2012–2016</li></ul></div>
+        <div class="panel reveal rounded-xl p-6"><h3 class="font-semibold text-white">Tools &amp; domains</h3><p class="mt-4 text-sm leading-7 text-slate-300">Healthcare IT · ERP (MedoNext, Medics, Marg, Petpooja, SWIL) · Python · React · TypeScript · Google Apps Script · Excel/VBA · Power BI · SQL · AI tools · procurement and inventory operations</p></div>
+      </div>
+    </section>
+    <section id="contact" class="py-16">
+      <div class="panel reveal flex flex-col justify-between gap-8 rounded-2xl p-7 sm:p-10 md:flex-row md:items-center">
+        <div><p class="text-xs font-semibold uppercase tracking-[.25em] text-cyan-300">Contact</p><h2 class="mt-3 text-3xl font-bold text-white">Let’s connect.</h2><p class="mt-3 text-slate-400">Open to IT management, business systems, ERP and automation opportunities.</p></div>
+        <div class="flex flex-col gap-3 text-sm"><a class="text-cyan-200 hover:text-white" href="mailto:amitpatil.patil35@gmail.com">amitpatil.patil35@gmail.com</a><a class="text-cyan-200 hover:text-white" href="https://www.linkedin.com/in/amit-patil-47a344b4/" target="_blank" rel="noopener noreferrer">LinkedIn profile ↗</a><a class="text-cyan-200 hover:text-white" href="https://github.com/AmythP" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="border-t border-slate-800 px-4 py-6 text-center text-xs text-slate-500">© <span id="year"></span> Amit Patil · IT Management, Business Systems &amp; Automation</footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+      }), { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+    } else {
+      document.querySelectorAll('.reveal').forEach(element => element.classList.add('visible'));
+    }
+    if (window.lucide) window.lucide.createIcons();
+  </script>
+</body>
+</html>
