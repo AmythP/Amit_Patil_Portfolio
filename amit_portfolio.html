@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Amit Patil — IT Manager focused on healthcare IT, business systems, ERP implementation, automation, and analytics.">
+  <meta name="description" content="Amit Patil — IT Manager specializing in healthcare IT, business systems, ERP implementation, automation and analytics.">
   <meta name="theme-color" content="#07111f">
   <title>Amit Patil | IT Management &amp; Automation Portfolio</title>
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
   <style>
     :root { color-scheme: dark; --cyan:#67e8f9; --amber:#fbbf24; }
+    html { scroll-behavior:smooth; }
     body { background:#07111f; color:#e5edf7; font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; }
     .backdrop { position:fixed; inset:0; z-index:-1; pointer-events:none; background:radial-gradient(ellipse at 75% 15%,rgba(8,145,178,.18),transparent 40%),radial-gradient(ellipse at 10% 70%,rgba(217,119,6,.12),transparent 40%),linear-gradient(rgba(103,232,249,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(103,232,249,.035) 1px,transparent 1px); background-size:auto,auto,48px 48px,48px 48px; }
-    .panel { background:rgba(15,27,45,.8); border:1px solid rgba(103,232,249,.16); box-shadow:0 18px 55px rgba(0,0,0,.24); backdrop-filter:blur(12px); }
+    .panel { background:rgba(15,27,45,.84); border:1px solid rgba(103,232,249,.16); box-shadow:0 18px 55px rgba(0,0,0,.24); backdrop-filter:blur(12px); }
     .accent { background:linear-gradient(110deg,#fbbf24,#67e8f9); -webkit-background-clip:text; background-clip:text; color:transparent; }
     .reveal { opacity:0; transform:translateY(14px); transition:opacity .55s ease,transform .55s ease; }
     .reveal.visible { opacity:1; transform:none; }
@@ -20,12 +21,12 @@
   </style>
 </head>
 <body class="antialiased">
-  <div class="backdrop"></div>
+  <div class="backdrop" aria-hidden="true"></div>
   <header class="sticky top-0 z-30 border-b border-cyan-300/10 bg-slate-950/85 backdrop-blur-xl">
     <nav class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6" aria-label="Main navigation">
       <a href="#home" class="font-semibold tracking-wide text-white">AMIT <span class="text-cyan-300">PATIL</span></a>
       <div class="hidden items-center gap-6 text-sm text-slate-300 md:flex">
-        <a class="hover:text-cyan-200" href="#about">About</a><a class="hover:text-cyan-200" href="#experience">Experience</a><a class="hover:text-cyan-200" href="#projects">Projects</a><a class="hover:text-cyan-200" href="#contact">Contact</a>
+        <a class="hover:text-cyan-200" href="#about">About</a><a class="hover:text-cyan-200" href="#experience">Experience</a><a class="hover:text-cyan-200" href="#projects">Projects</a><a class="hover:text-cyan-200" href="#credentials">Credentials</a><a class="hover:text-cyan-200" href="#contact">Contact</a>
       </div>
       <a href="#contact" class="rounded-lg border border-cyan-300/30 px-3 py-2 text-xs font-semibold text-cyan-200 hover:bg-cyan-300/10">Get in touch</a>
     </nav>
@@ -71,21 +72,26 @@
       </div>
     </section>
     <section id="projects" class="py-16">
-      <div class="reveal"><p class="text-xs font-semibold uppercase tracking-[.25em] text-cyan-300">Selected projects</p><h2 class="mt-3 text-3xl font-bold text-white">Systems built to solve real workflow problems</h2></div>
+      <div class="reveal"><p class="text-xs font-semibold uppercase tracking-[.25em] text-cyan-300">Selected projects</p><h2 class="mt-3 text-3xl font-bold text-white">Projects &amp; automation builds</h2><p class="mt-3 max-w-3xl text-sm leading-6 text-slate-400">A selection of the systems and tools from my experience. Project descriptions are summaries; not every project is publicly hosted or available as a live demo.</p></div>
       <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        <article class="panel reveal rounded-xl p-5"><p class="text-xs text-cyan-200">HEALTHCARE · REACT · SHEETS</p><h3 class="mt-3 font-semibold text-white">IVF Clinic Operations Platform</h3><p class="mt-2 text-sm leading-6 text-slate-400">Internal workflow platform for registrations, appointments, prescriptions and reporting.</p></article>
-        <article class="panel reveal rounded-xl p-5"><p class="text-xs text-amber-200">HEALTHCARE · CRM</p><h3 class="mt-3 font-semibold text-white">Hospital Lead CRM</h3><p class="mt-2 text-sm leading-6 text-slate-400">Lead tracking workflows for patients, doctors and tele-callers with automated capture.</p></article>
-        <article class="panel reveal rounded-xl p-5"><p class="text-xs text-cyan-200">ERP · PYTHON</p><h3 class="mt-3 font-semibold text-white">Inventory Audit Automation</h3><p class="mt-2 text-sm leading-6 text-slate-400">Compares consumption with available stock and produces discrepancy and closing-stock reports.</p></article>
-        <article class="panel reveal rounded-xl p-5"><p class="text-xs text-amber-200">ERP · APPS SCRIPT</p><h3 class="mt-3 font-semibold text-white">ERP Reporting &amp; Data Sync</h3><p class="mt-2 text-sm leading-6 text-slate-400">Automates sales, purchase, inventory and GST reporting with scheduled backups.</p></article>
-        <article class="panel reveal rounded-xl p-5"><p class="text-xs text-cyan-200">HR · HTML · JAVASCRIPT</p><h3 class="mt-3 font-semibold text-white">Appointment Letter Generator</h3><p class="mt-2 text-sm leading-6 text-slate-400">Creates structured appointment letters with salary details, validation and PDF export.</p></article>
-        <article class="panel reveal rounded-xl p-5"><p class="text-xs text-amber-200">AUTOMATION · PYTHON</p><h3 class="mt-3 font-semibold text-white">Operations Tools</h3><p class="mt-2 text-sm leading-6 text-slate-400">A collection of tools for reporting, reconciliation, file handling and process support.</p></article>
+        <article class="panel reveal rounded-xl p-5"><p class="text-xs text-cyan-200">HEALTHCARE · REACT · SHEETS</p><h3 class="mt-3 font-semibold text-white">IVF Clinic Operations Platform</h3><p class="mt-2 text-sm leading-6 text-slate-400">Internal workflow platform for patient registration, appointments, prescriptions, visits, reports and staff operations.</p></article>
+        <article class="panel reveal rounded-xl p-5"><p class="text-xs text-amber-200">HEALTHCARE · HR · HTML/CSS/JS</p><h3 class="mt-3 font-semibold text-white">Appointment Letter Generator</h3><p class="mt-2 text-sm leading-6 text-slate-400">Generates appointment letters with salary structure, statutory deductions, CTC validation, annexures, preview and PDF export.</p></article>
+        <article class="panel reveal rounded-xl p-5"><p class="text-xs text-cyan-200">ERP · PYTHON</p><h3 class="mt-3 font-semibold text-white">POS/ERP Inventory Audit Automation</h3><p class="mt-2 text-sm leading-6 text-slate-400">Compares consumption with available stock, flags discrepancies, calculates closing stock and creates Excel audit reports.</p></article>
+        <article class="panel reveal rounded-xl p-5"><p class="text-xs text-amber-200">ERP · PYTHON · APPS SCRIPT</p><h3 class="mt-3 font-semibold text-white">ERP Reporting and Data Sync Suite</h3><p class="mt-2 text-sm leading-6 text-slate-400">Extracts ERP sales, purchase, inventory and GST reports, syncs data to Google Sheets and supports scheduled backups and Excel exports.</p></article>
+        <article class="panel reveal rounded-xl p-5"><p class="text-xs text-cyan-200">HEALTHCARE · HRMS · REACT</p><h3 class="mt-3 font-semibold text-white">HRMS and Payroll Cloud Application</h3><p class="mt-2 text-sm leading-6 text-slate-400">Application prototype for employee records, attendance, payroll workflows, salary reports and dashboards.</p></article>
+        <article class="panel reveal rounded-xl p-5"><p class="text-xs text-amber-200">HEALTHCARE · CRM · GOOGLE SHEETS</p><h3 class="mt-3 font-semibold text-white">Hospital Lead CRM</h3><p class="mt-2 text-sm leading-6 text-slate-400">Multi-department CRM for patient, doctor and tele-caller lead tracking with automated lead capture and conversion visibility.</p></article>
+        <article class="panel reveal rounded-xl p-5"><p class="text-xs text-cyan-200">RECRUITMENT · APPS SCRIPT</p><h3 class="mt-3 font-semibold text-white">Recruitment Control Centre &amp; Candidate Hub</h3><p class="mt-2 text-sm leading-6 text-slate-400">Recruiter portal with candidate intake, Drive resume uploads, a Sheet-backed dashboard, candidate directory and interview/offer pipeline.</p></article>
+        <article class="panel reveal rounded-xl p-5"><p class="text-xs text-amber-200">AUTOMATION · PYTHON</p><h3 class="mt-3 font-semibold text-white">Gmail Payment Tracker</h3><p class="mt-2 text-sm leading-6 text-slate-400">Reads payment notification emails and logs payment amounts to Excel and Google Sheets.</p></article>
+        <article class="panel reveal rounded-xl p-5"><p class="text-xs text-cyan-200">AUTOMATION · POWERSHELL · VBA</p><h3 class="mt-3 font-semibold text-white">Organisation Tools</h3><p class="mt-2 text-sm leading-6 text-slate-400">Utilities for file copying and renaming, folder creation, file monitoring, alerts and scheduled transfers.</p></article>
+        <article class="panel reveal rounded-xl p-5"><p class="text-xs text-amber-200">HEALTHCARE · PRINTING · HTML/CSS/JS</p><h3 class="mt-3 font-semibold text-white">Label Generator and Photo Print Sizer</h3><p class="mt-2 text-sm leading-6 text-slate-400">Reception label and photo-cropping tools for exporting exact print sizes with DPI control.</p></article>
       </div>
     </section>
     <section id="credentials" class="py-16">
       <div class="reveal"><p class="text-xs font-semibold uppercase tracking-[.25em] text-cyan-300">Education &amp; capabilities</p><h2 class="mt-3 text-3xl font-bold text-white">A mix of technical depth and operational experience</h2></div>
       <div class="mt-8 grid gap-4 md:grid-cols-2">
-        <div class="panel reveal rounded-xl p-6"><h3 class="font-semibold text-white">Education</h3><ul class="mt-4 space-y-3 text-sm text-slate-300"><li><strong>M.Tech.</strong> · Malwa Institute of Science and Technology · 2019–2022</li><li><strong>B.Tech.</strong> · Vel Tech University · 2012–2016</li></ul></div>
-        <div class="panel reveal rounded-xl p-6"><h3 class="font-semibold text-white">Tools &amp; domains</h3><p class="mt-4 text-sm leading-7 text-slate-300">Healthcare IT · ERP (MedoNext, Medics, Marg, Petpooja, SWIL) · Python · React · TypeScript · Google Apps Script · Excel/VBA · Power BI · SQL · AI tools · procurement and inventory operations</p></div>
+        <div class="panel reveal rounded-xl p-6"><h3 class="font-semibold text-white">Education</h3><ul class="mt-4 space-y-3 text-sm text-slate-300"><li><strong>M.Tech.</strong> · Malwa Institute of Science and Technology · 2019–2022</li><li><strong>B.Tech.</strong> · Vel Tech University · 2012–2016</li><li><strong>Higher Secondary</strong> · Kendriya Vidyalaya, Amla · 2012</li></ul></div>
+        <div class="panel reveal rounded-xl p-6"><h3 class="font-semibold text-white">Tools &amp; domains</h3><p class="mt-4 text-sm leading-7 text-slate-300">Healthcare IT · ERP (MedoNext, Medics, Marg, Petpooja, SWIL, EasySoft) · Python · React · TypeScript · Google Apps Script · Excel/VBA · Power BI · SQL · AI tools · procurement and inventory operations</p></div>
+        <div class="panel reveal rounded-xl p-6 md:col-span-2"><h3 class="font-semibold text-white">Selected certifications</h3><p class="mt-4 text-sm leading-7 text-slate-300">Google data analytics coursework · IBM AI and generative AI coursework · AWS Getting Started with Data Analytics · Johns Hopkins Crash Course in Data Science · Excel and Power BI training</p></div>
       </div>
     </section>
     <section id="contact" class="py-16">

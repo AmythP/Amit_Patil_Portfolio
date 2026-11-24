@@ -12,11 +12,15 @@ The named page is also available at:
 
 `https://amythp.github.io/Amit_Patil_Portfolio/amit_portfolio.html`
 
+## Projects
+
+The portfolio presents ten projects from the project list in the resume data: IVF Clinic Operations Platform; Appointment Letter Generator; POS/ERP Inventory Audit Automation; ERP Reporting and Data Sync Suite; HRMS and Payroll Cloud Application; Hospital Lead CRM; Recruitment Control Centre & Candidate Hub; Gmail Payment Tracker; Organisation Tools; and Label Generator and Photo Print Sizer. Project descriptions are summaries; not every project is publicly hosted or available as a live demo.
+
 ## Enable GitHub Pages
 
-This repository must have GitHub Pages enabled before either URL will serve the page. In the repository, open **Settings → Pages**, choose **Deploy from a branch**, select `main` and the `/ (root)` folder, then save. Wait for the Pages deployment to finish. Since the repository is private, verify that your GitHub plan/settings permit public Pages access; otherwise, make the repository public to share the site with people who do not have repository access.
+In the repository, open **Settings → Pages**, choose **Deploy from a branch**, select `main` and the `/ (root)` folder, then save. Wait for the Pages deployment to finish.
 
-Once Pages is enabled, anyone with the site URL can view the static page. They cannot edit the repository unless you grant them repository write access. Static site contents and source code are publicly inspectable when published.
+This repository is public, so once Pages is enabled, anyone with the site URL can view the static page. Visitors cannot edit the repository unless granted write access. Published static page source is publicly inspectable.
 
 ## Run locally
 
@@ -30,9 +34,9 @@ Then visit `http://localhost:8000/amit_portfolio.html`.
 
 ## Repository structure
 
-- `amit_portfolio.html` — complete responsive portfolio landing page.
-- `index.html` — root redirect to the named portfolio page (required as the GitHub Pages default entry point).
+- `amit_portfolio.html` — complete responsive portfolio landing page, including ten project summaries.
+- `index.html` — root redirect to the named portfolio page (the GitHub Pages default entry point).
 - `css/`, `js/` — legacy assets retained from the earlier portfolio version.
 - `images/` — placeholder documentation for optional visual assets.
 
-The current landing page is self-contained and loads Tailwind CSS and Lucide icons from their public CDNs. It uses inline JavaScript for the current year and reveal-on-scroll effects. No build step is required.
+The current landing page loads Tailwind CSS and Lucide icons from their public CDNs. It uses inline JavaScript for the current year and reveal-on-scroll effects. No build step is required.
